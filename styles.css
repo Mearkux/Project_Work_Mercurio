@@ -1,0 +1,177 @@
+/* Reset dei margini e padding predefiniti per uniformità */
+* {
+    margin: 0; /* Rimuove i margini predefiniti */
+    padding: 0; /* Rimuove i padding predefiniti */
+    box-sizing: border-box; /* Include padding e bordi nelle dimensioni degli elementi */
+}
+
+/* Stili generali del body */
+body {
+    font-family: Arial, sans-serif; /* Imposta un font chiaro e leggibile */
+    background-color: #f4f4f4; /* Colore di sfondo grigio chiaro per un aspetto pulito */
+    color: #333; /* Colore del testo scuro per leggibilità */
+    line-height: 1.6; /* Migliora la leggibilità del testo aumentando l'interlinea */
+}
+
+/* Stili per l'header */
+header {
+    background-color: #005daa; /* Blu ufficiale di Renault per il branding */
+    color: white; /* Testo bianco per contrasto */
+    padding: 20px; /* Spaziatura interna */
+    text-align: center; /* Allinea il contenuto al centro */
+}
+
+.header-content {
+    max-width: 1200px; /* Limita la larghezza massima del contenuto */
+    margin: 0 auto; /* Centra il contenuto orizzontalmente */
+    display: flex; /* Dispone logo e titolo in orizzontale */
+    align-items: center; /* Allinea verticalmente logo e titolo */
+    justify-content: center; /* Centra il contenuto */
+    flex-wrap: wrap; /* Permette di andare a capo su schermi piccoli */
+}
+
+header img {
+    height: 40px; /* Altezza fissa per il logo */
+    margin-right: 15px; /* Spazio a destra del logo */
+}
+
+header h1 {
+    font-size: 24px; /* Dimensione del titolo */
+    font-weight: bold; /* Rende il titolo in grassetto */
+}
+
+/* Stili per la sezione introduttiva */
+#intro {
+    background-color: #e0f2f1; /* Verde chiaro per evocare sostenibilità */
+    padding: 20px; /* Spaziatura interna */
+    text-align: center; /* Testo centrato */
+}
+
+#intro p {
+    max-width: 800px; /* Limita la larghezza del testo per leggibilità */
+    margin: 0 auto; /* Centra il testo orizzontalmente */
+    font-size: 16px; /* Dimensione del testo */
+}
+
+/* Stili per la sezione principale con l'immagine */
+#main {
+    padding: 40px 20px; /* Spaziatura interna (più spazio sopra e sotto) */
+    text-align: center; /* Contenuto centrato */
+    background-color: white; /* Sfondo bianco per risalto */
+}
+
+.image-container {
+    max-width: 800px; /* Limita la larghezza massima dell'immagine a 800px */
+    margin: 0 auto; /* Centra il contenitore orizzontalmente */
+}
+
+.image-container img {
+    width: 100%; /* L'immagine occupa il 100% della larghezza del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    display: block; /* Rimuove lo spazio inferiore e facilita la centratura */
+}
+
+/* Stili per la sezione del sunto */
+#summary {
+    padding: 40px 20px; /* Spaziatura interna */
+    background-color: #f4f4f4; /* Sfondo grigio chiaro per distinguere la sezione */
+    text-align: center; /* Contenuto centrato */
+}
+
+#summary h2 {
+    font-size: 22px; /* Dimensione del titolo della sezione */
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+    color: #005daa; /* Blu Renault per il titolo */
+}
+
+#summary p {
+    max-width: 800px; /* Limita la larghezza del testo per leggibilità */
+    margin: 0 auto 20px; /* Centra il testo e aggiunge spazio sotto */
+    font-size: 16px; /* Dimensione del testo */
+}
+
+#summary ul {
+    max-width: 800px; /* Limita la larghezza della lista */
+    margin: 0 auto 30px; /* Centra la lista e aggiunge spazio sotto */
+    text-align: left; /* Allinea il testo a sinistra per leggibilità */
+    list-style-type: disc; /* Stile dei punti della lista */
+    padding-left: 20px; /* Spaziatura a sinistra per i punti */
+}
+
+#summary li {
+    margin-bottom: 15px; /* Spazio tra i punti della lista */
+    font-size: 16px; /* Dimensione del testo */
+}
+
+#summary li strong {
+    color: #4caf50; /* Verde per evidenziare i titoli dei punti */
+}
+
+#summary button {
+    background-color: #4caf50; /* Verde per sostenibilità */
+    color: white; /* Testo bianco per contrasto */
+    padding: 15px 30px; /* Spaziatura interna del pulsante */
+    border: none; /* Rimuove il bordo predefinito */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    font-size: 18px; /* Dimensione del testo */
+    border-radius: 5px; /* Arrotonda gli angoli del pulsante */
+    transition: background-color 0.3s ease; /* Aggiunge una transizione fluida per l'hover */
+}
+
+#summary button:hover {
+    background-color: #45a049; /* Verde più scuro al passaggio del mouse */
+}
+
+/* Stili per il footer */
+footer {
+    background-color: #005daa; /* Blu Renault */
+    color: white; /* Testo bianco */
+    text-align: center; /* Contenuto centrato */
+    padding: 10px; /* Spaziatura interna */
+    position: fixed; /* Fissa il footer in fondo alla pagina */
+    bottom: 0; /* Allinea al fondo */
+    width: 100%; /* Larghezza completa */
+}
+
+footer a {
+    color: white; /* Colore del link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Aggiunge sottolineatura al passaggio del mouse */
+}
+
+/* Media query per schermi piccoli (es. smartphone) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px; /* Riduce la dimensione del titolo su schermi piccoli */
+    }
+
+    header img {
+        height: 30px; /* Riduce la dimensione del logo su schermi piccoli */
+        margin-right: 10px; /* Riduce lo spazio a destra del logo */
+    }
+
+    #intro p {
+        font-size: 14px; /* Riduce la dimensione del testo su schermi piccoli */
+    }
+
+    #summary h2 {
+        font-size: 18px; /* Riduce la dimensione del titolo su schermi piccoli */
+    }
+
+    #summary p,
+    #summary li {
+        font-size: 14px; /* Riduce la dimensione del testo su schermi piccoli */
+    }
+
+    #summary button {
+        font-size: 16px; /* Riduce la dimensione del testo del pulsante */
+        padding: 10px 20px; /* Riduce la spaziatura interna del pulsante */
+    }
+
+    .image-container {
+        max-width: 100%; /* Su schermi piccoli, l'immagine occupa tutta la larghezza disponibile */
+    }
+}
